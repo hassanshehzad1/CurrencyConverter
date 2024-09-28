@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+
+      <div class="input_box">
+        <label for="number">Enter Amount</label>
+        <input
+          type="number"
+          name="number"
+          id="numberInput"
+          placeholder="Enter Amount"
+        />
+      </div>
+
+      <div class="two_boxes">
+        <div class="from_box">
+          <p>From</p>
+          <select name="select_from" id="select_from">
+            <option value="pkr">Pkr</option>
+            <option value="Sar">Sar</option>
+          </select>
+        </div>
+
+        <span style="font-size: 50px">&#8651;</span>
+        <div class="to">
+          <p>To</p>
+          <select name="select_to" id="select_to">
+            <option value="inr">Inr</option>
+            <option value="jpy">jpy</option>
+          </select>
+        </div>
+      </div>
+      <div class="priceDetails">
+        <div class="per_rate_details">
+          <p id="Currency_from">1USD</p>
+          <p>=</p>
+          <p id="Currency_to">80INR</p>
+        </div>
+
+        <div class="final_amount">
+          <p id="finalAmount">3000.pkr</p>
+        </div>
+      </div>
+
+      <div class="exchangeButton">
+        <button type="button" id="exchangeButton">Exchange Amount</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="currCode.js"></script>
+  </body>
+</html>
